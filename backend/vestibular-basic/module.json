@@ -1,0 +1,22 @@
+﻿{
+  "id": "vestibular-basic",
+  "version": "1.0.0",
+  "title": "Vestibulär: Kopfbewegungen",
+  "description": "Einfache Kopfbewegungen nach Audioansage.",
+  "entryScript": "../backend/vestibular-basic/module.js",
+  "assets": [
+    "../backend/vestibular-basic/assets/head-back-ger.mp3",
+    "../backend/vestibular-basic/assets/head-forward-ger.mp3",
+    "../backend/vestibular-basic/assets/look-left.mp3"
+  ],
+  "ui": {
+    "panelTitle": "Vestibuläres Training",
+    "startLabel": "Start",
+    "completeLabel": "Als erledigt markieren"
+  },
+  "steps": [
+    { "type": "intro", "text": "Sitze aufrecht. Bewege nur den Kopf. Folge den Audioanweisungen." },
+    { "type": "task", "durationMs": 60000, "params": { "pollMs": 500, "thresholdYaw": 10, "thresholdPitch": 8 } }
+  ]
+}
+

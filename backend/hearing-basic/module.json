@@ -1,0 +1,17 @@
+﻿{
+  "id": "hearing-basic",
+  "version": "1.0.0",
+  "title": "Hören: Sinuston",
+  "description": "Sinustöne mit einstellbarer Frequenz abspielen.",
+  "entryScript": "../backend/hearing-basic/module.js",
+  "assets": [],
+  "ui": {
+    "panelTitle": "Hörtraining",
+    "startLabel": "Start",
+    "completeLabel": "Als erledigt markieren"
+  },
+  "steps": [
+    { "type": "intro", "text": "Starte den Ton und stelle die Frequenz ein." },
+    { "type": "task", "durationMs": 30000, "params": { "minHz": 200, "maxHz": 1200, "startHz": 440 } }
+  ]
+}

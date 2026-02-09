@@ -1,0 +1,17 @@
+{
+  "id": "vision-basic",
+  "version": "1.0.0",
+  "title": "Sehen: Bewegtes Ziel",
+  "description": "Verfolge ein bewegtes Ziel und reagiere auf das Signal.",
+  "entryScript": "../backend/vision-basic/module.js",
+  "assets": [],
+  "ui": {
+    "panelTitle": "Sehtraining",
+    "startLabel": "Sitzung starten",
+    "completeLabel": "Als erledigt markieren"
+  },
+  "steps": [
+    { "type": "intro", "text": "Fokussiere den Punkt in der Mitte. Klicke das bewegte Ziel, wenn es rot wird." },
+    { "type": "task", "durationMs": 30000, "params": { "speed": 800 } }
+  ]
+}

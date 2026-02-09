@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "modules": [
+    {
+      "id": "vision-basic",
+      "title": "Vision: Moving Target",
+      "version": "1.0.0",
+      "entry": "../backend/vision-basic/module.json"
+    },
+    {
+      "id": "hearing-basic",
+      "title": "Hearing: Sine Tone",
+      "version": "1.0.0",
+      "entry": "../backend/hearing-basic/module.json"
+    },
+    {
+      "id": "vestibular-basic",
+      "title": "Vestibular: Head Movements",
+      "version": "1.0.0",
+      "entry": "../backend/vestibular-basic/module.json"
+    }
+  ]
+}
