@@ -83,6 +83,11 @@ class Handler(BaseHTTPRequestHandler):
 
         return self._json(404, {"error": "not found"})
 
+    def do_OPTIONS(self):
+        self.send_response(204)
+        self._set_cors()
+        self.end_headers()
+
 
 if __name__ == "__main__":
     load_adapters()
